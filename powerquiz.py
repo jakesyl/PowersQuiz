@@ -9,10 +9,9 @@ while True:
         exponent = 2
     elif number<10 and number>6:
         exponent=3
-    elif number<6 and number>3:
-        exponent = 4
     else:
-        exponent=4
+        if exponent<3:
+            exponent= randint(4,5)
         
     if choose == 1:
         #why doesn't python have a switch case?
